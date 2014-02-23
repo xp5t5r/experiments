@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+  <application>xp5t5r-gae-experiment</application>
+  <version>1</version>
+  <threadsafe>true</threadsafe>
+  <system-properties>
+    <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+    <property name="datastore.default_high_rep_job_policy_unapplied_job_pct" value="20"/>
+    <property name="datastore.datastore.auto_id_allocation_policy" value="scattered"/>
+  </system-properties>
+</appengine-web-app>
