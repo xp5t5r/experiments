@@ -21,3 +21,6 @@ project/project
 *.ipr
 *.iws
 .history
+
+# Vagrant
+.vagrant
