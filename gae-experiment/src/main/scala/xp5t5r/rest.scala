@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest
 import RestMappings._
 
 object ApiPath {
-  def unapply[T <: HttpServletRequest](req: HttpRequest[T]) = Some(req.uri.substring("api/v0/".length).split('?')(0))
+  def unapply[T <: HttpServletRequest](req: HttpRequest[T]) = Some(req.uri.replaceFirst("api/v0/", "").split('?')(0))
 }
 
 // TODO: handle invalid ids (e.g. NumberFormatException)
